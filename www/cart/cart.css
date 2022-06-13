@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
+}
+
+/*Container style*/
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header style*/
+
+#header{
+    height: max-content;
+    width: 100%;
+    background-color: #69A88D;
+    border-bottom: 2px solid #176560;
+}
+
+/*Logos style*/
+
+#logos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 2px solid #176560;
+}
+
+#logos img{
+    width: 3%;
+    margin-left: 9px;
+}
+
+#logos span a{
+    font-size: 40px;
+    color: #F3EEE6;
+    transition: 300ms;
+    margin-right: 33px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 650px) {
+    #logos span a{
+        font-size: 20px;
+    }
+}
+
+#logos span a:hover{
+    color: #176560;
+}
+
+#logos #cart{
+    text-decoration: none;
+    margin-right: 17px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 650px) {
+    #logos #cart{
+        width: 30px;
+    }
+}
+
+#logos #cart img{
+    width: 100%;
+}
+
+#logos #counter{
+    color: #F3EEE6;
+}
+
+/*Navi style*/
+
+#navi{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navi a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #F3EEE6;
+    transition: 300ms;
+}
+
+@media only screen and (max-width: 650px) {
+    #navi a{
+        font-size: 15px;
+    }
+}
+
+#navi a:hover{
+    color: #176560;
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 650px) {
+    #navi a:hover{
+        font-size: 18px;
+    }
+}
+
+/*Content style*/
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*Number style*/
+
+#content #number{
+    width: max-content;
+    border-bottom: 2px solid #176560;
+    font-size: larger;
+    padding: 9px;
+    margin: 15px 0;
+}
+
+#content #number p{
+    margin: 0;
+}
+
+/*Inside style*/
+
+#inside{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-left: 2.5px solid #176560;
+    border-top: 1.8px solid #176560;
+    border-top-left-radius: 7px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 860px) {
+    #inside{
+        width: 70%;
+    }
+}
+
+
+#inside legend{
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*Products styles*/
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product img{
+    width: 40%;
+    border: 1px solid #176560;
+    box-shadow: 2px 2px #69A88D;
+}
+
+.product span{
+    padding: 3px;
+    font-size: larger;
+    border-right: 2px solid #176560;
+}
+
+.product #removing{
+    border: 1px solid #e3504d;
+    border-radius: 3px;
+    background-color: #F3EEE6;
+    color: #e3504d;
+    padding: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    box-shadow: 2px 2px #e3504d;
+    text-decoration: none;
+    font-size: large;
+}
+
+.product #removing:active{
+    box-shadow: none;
+}
+
+.product #pls{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.product #plus{
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    background-color: #F3EEE6;
+    border: 0.5px solid #176560;
+    padding: 4px;
+    margin-left: 9px;
+}
+
+/*Delivery style*/
+
+#delivery{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-top: 2px solid #176560;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#delivery a{
+    text-align: center;
+    border: 1px solid #176560;
+    border-radius: 3px;
+    background-color: #F3EEE6;
+    color: #176560;
+    padding: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    box-shadow: 2px 2px #176560;
+    text-decoration: none;
+    font-size: large;
+}
+
+/*Footer style*/
+
+#footer{
+    height: max-content;
+    width: 100%;
+    background-color: #69A88D;
+    border-top: 3px solid #176560;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 870px) {
+    #footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#footer ul{
+    list-style-type: none;
+    border-top: 3px solid #176560;
+}
+
+#footer li{
+    padding: 0;
+    margin: 0;
+    color: #F3EEE6;
+}

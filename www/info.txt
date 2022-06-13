@@ -1,0 +1,6 @@
+Miasto: sss
+Ulica: awd
+Numer budynku:1
+Numer lokalu: awd
+Fima wysyłkowa: inpost
+Płaność: blik
